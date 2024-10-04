@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body>
+    <div>
+      <!-- Top navbar -->
+      <nav class="flex justify-around items-center py-6">
+        <a href="/index.html"
+          ><button>
+            <img
+              src="/assets/carrot_logo/carrot_logo.png"
+              alt="carrot_logo"
+            /></button
+        ></a>
+        <form class="flex border-2 border-indigo-600 w-5/12 rounded">
+          <input
+            type="text"
+            name="keyword"
+            class="flex-1 px-4 rounded"
+            placeholder="Search..."
+          />
+          <select class="py-2 px-4 border-l-2 border-indigo-600">
+            <option>All Categories</option>
+            <option value="mens">Men's</option>
+            <option value="womens">Women's</option>
+            <option value="electronics">Electronics</option>
+          </select>
+          <button class="bg-indigo-600 py-2 px-4 text-white">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+        <div class="flex gap-6">
+          <button class="text-lg relative" id="account">
+            <i class="ri-user-line"></i>
+            <span
+              >Account
+              <div
+                class="rounded bg-white border w-[150px] py-3 absolute top-10 right-0 flex flex-col items-start"
+                id="account-menu"
+              >
+                <a
+                  href="/pages/register.html"
+                  class="text-sm hover:bg-gray-100 w-full text-left px-3 py-2"
+                  >Register</a
+                >
+                <a
+                  href="/pages/login.html"
+                  class="text-sm hover:bg-gray-100 w-full text-left px-3 py-2"
+                  >Login</a
+                >
+                <a
+                  href="/pages/checkout.html"
+                  class="text-sm hover:bg-gray-100 w-full text-left px-3 py-2"
+                  >Checkout</a
+                >
+              </div>
+            </span>
+          </button>
+          <a href="/pages/wishlist.html">
+            <button class="text-lg">
+              <i class="ri-heart-line"></i>
+              <span>Wishlist</span>
+            </button>
+          </a>
+          <button class="text-lg" id="cart">
+            <i class="ri-shopping-cart-line"></i>
+            <span>Cart</span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Main Nav Bar -->
+      <nav class="flex justify-around items-center py-6 bg-zinc-200">
+        <button class="border text-xl p-3 border-orange-700">
+          <i class="ri-menu-2-line"></i>
+        </button>
+        <ul class="flex gap-12">
+          <li><a href="#" class="text-md font-semibold">Home</a></li>
+          <li><a href="#" class="text-md font-semibold">Category</a></li>
+          <li><a href="#" class="text-md font-semibold">Products</a></li>
+          <li><a href="#" class="text-md font-semibold">Blog</a></li>
+          <li><a href="#" class="text-md font-semibold">Contact</a></li>
+        </ul>
+        <select class="border py-2 px-10">
+          <option>Current Location</option>
+          <option>Chicago</option>
+          <option>Los Angeles</option>
+          <option>Houston</option>
+          <option>Phoenix</option>
+          <option>San Diego</option>
+        </select>
+      </nav>
+
+      <!-- Page title -->
+      <div class="bg-[#e4f2ed] flex justify-between px-32 py-4 items-center">
+        <h1 class="font-semibold text-2xl">Wishlist</h1>
+        <p>Wishlist</p>
+      </div>
+    </div>
+
+    <!-- section register form -->
+
+    <!-- image-1 -->
+
+    <div class="grid grid-cols-4 md:m-24 m-8 md:gap-x-8 gap-y-8">
+      <div class="border bg-white rounded-md flex flex-col items-center gap-2">
+        <div class="overflow-hidden img-zoom">
+          <img
+            src="/assets/images/carrot_images/ws1.jpg"
+            alt="1"
+            class="w-full"
+          />
+          <div class="absolute top-4 right-10 flex flex-col gap-2">
+            <button class="bg-white shadow w-8 h-8 rounded-full">
+              <i class="ri-close-large-line"></i>
+            </button>
+            <button class="bg-white shadow w-8 h-8 rounded-full">
+              <i class="ri-heart-line"></i>
+            </button>
+            <button class="bg-white shadow w-8 h-8 rounded-full">
+              <i class="ri-eye-line"></i>
+            </button>
+          </div>
+        </div>
+        <p class="text-xm">Carrot</p>
+        <div>
+          <i class="ri-star-fill text-yellow-500"></i>
+          <i class="ri-star-fill text-yellow-500"></i>
+          <i class="ri-star-fill text-yellow-500"></i>
+          <i class="ri-star-fill text-yellow-500"></i>
+          <i class="ri-star-half-line text-yellow-500"></i>
+          (4.5) rating
+        </div>
+        <h1 class="text-lg font-semibold text-center">
+          Fresh organic villa farm carrot 500gm pack
+        </h1>
+        <div class="flex gap-4">
+          <p class="font-bold text-[#64B7AA]">$120</p>
+          <del class="text-gray-500 text-xs font-bold">$125</del>
+        </div>
+      </div>
+
+      <!-- image-2 -->
+
+      <div class="border bg-white rounded-md flex flex-col items-center gap-2">
+        <div class="overflow-hidden img-zoom">
+          <img
+            src="/assets/images/carrot_images/2.jpg"
+            alt="1"
+            class="w-full"
+          />
+          <div class="absolute top-4 right-10 flex flex-col gap-2">
+            <button class="bg-white shadow w-8 h-8 rounded-full">
+              <i class="ri-close-large-line"></i>
+            </button>
+            <button class="bg-white shadow w-8 h-8 rounded-full">
+              <i class="ri-heart-line"></i>
+            </button>
+            <button class="bg-white shadow w-8 h-8 rounded-full">
+              <i class="ri-eye-line"></i>
+            </button>
+          </div>
+        </div>
+        <p class="text-xm">Mix-Vegitables</p>
+        <div>
+          <i class="ri-star-fill text-yellow-500"></i>
+          <i class="ri-star-fill text-yellow-500"></i>
+          <i class="ri-star-fill text-yellow-500"></i>
+          <i class="ri-star-fill text-yellow-500"></i>
+          (4) rating
+        </div>
+        <h1 class="text-lg font-semibold text-center">
+          Fresh organic villa farm Mix-Vegitables 1kg pack
+        </h1>
+        <div class="flex gap-4">
+          <p class="font-bold text-[#64B7AA]">$220</p>
+          <del class="text-gray-500 text-xs font-bold">$325</del>
+        </div>
+      </div>
+
+      <!-- image-3 -->
+
+      <div class="border bg-white rounded-md flex flex-col items-center gap-2">
+        <div class="overflow-hidden img-zoom">
+          <img
+            src="/assets/images/carrot_images/5.jpg"
+            alt="1"
+            class="w-full"
+          />
+          <div class="absolute top-4 right-10 flex flex-col gap-2">
+            <button class="bg-white shadow w-8 h-8 rounded-full">
+              <i class="ri-close-large-line"></i>
+            </button>
+            <button class="bg-white shadow w-8 h-8 rounded-full">
+              <i class="ri-heart-line"></i>
+            </button>
+            <button class="bg-white shadow w-8 h-8 rounded-full">
+              <i class="ri-eye-line"></i>
+            </button>
+          </div>
+        </div>
+        <p class="text-xm">Mix-Carrots</p>
+        <div>
+          <i class="ri-star-fill text-yellow-500"></i>
+          <i class="ri-star-fill text-yellow-500"></i>
+          <i class="ri-star-fill text-yellow-500"></i>
+          <i class="ri-star-fill text-yellow-500"></i>
+          <i class="ri-star-half-line text-yellow-500"></i>
+          (4.5) rating
+        </div>
+        <h1 class="text-lg font-semibold text-center">
+          Fresh organic villa farm Mix-Carrots 1-kg pack
+        </h1>
+        <div class="flex gap-4">
+          <p class="font-bold text-[#64B7AA]">$180</p>
+          <del class="text-gray-500 text-xs font-bold">$195</del>
+        </div>
+      </div>
+
+      <!-- image-4 -->
+
+      <div class="border bg-white rounded-md flex flex-col items-center gap-2">
+        <div class="overflow-hidden img-zoom">
+          <img
+            src="/assets/images/carrot_images/1.jpg"
+            alt="1"
+            class="w-full"
+          />
+          <div class="absolute top-4 right-10 flex flex-col gap-2">
+            <button class="bg-white shadow w-8 h-8 rounded-full">
+              <i class="ri-close-large-line"></i>
+            </button>
+            <button class="bg-white shadow w-8 h-8 rounded-full">
+              <i class="ri-heart-line"></i>
+            </button>
+            <button class="bg-white shadow w-8 h-8 rounded-full">
+              <i class="ri-eye-line"></i>
+            </button>
+          </div>
+        </div>
+        <p class="text-xm">Carrot</p>
+        <div>
+          <i class="ri-star-fill text-yellow-500"></i>
+          <i class="ri-star-fill text-yellow-500"></i>
+          <i class="ri-star-fill text-yellow-500"></i>
+          <i class="ri-star-fill text-yellow-500"></i>
+          <i class="ri-star-half-line text-yellow-500"></i>
+          (4.5) rating
+        </div>
+        <h1 class="text-lg font-semibold text-center">
+          Fresh organic villa farm Tomatos 500gm pack
+        </h1>
+        <div class="flex gap-4">
+          <p class="font-bold text-[#64B7AA]">$120</p>
+          <del class="text-gray-500 text-xs font-bold">$125</del>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="p-4 grid grid-cols-4 bg-slate-200">
+      <div>
+        <img src="/assets/carrot_logo/carrot_logo.png" alt="carrot_logo" />
+        <section>
+          <strong>ABOUT</strong>
+          <div class="mt-4 space-y-1">
+            <div><button>Contact Us</button></div>
+            <div><button>Careers</button></div>
+            <div><button>Our Stories</button></div>
+            <div><button>Press</button></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Help section -->
+      <section>
+        <strong>HELP</strong>
+        <div class="mt-2 space-y-1">
+          <div><button>Payments</button></div>
+          <div><button>Shipping</button></div>
+          <div><button>Cancellation & Return</button></div>
+          <div><button>FAQ</button></div>
+          <div><button>Report Infringement</button></div>
+        </div>
+      </section>
+
+      <!-- Social section -->
+      <section>
+        <strong>Social:</strong>
+        <div class="flex gap-2 items-center mt-2">
+          <a
+            href="https://www.facebook.com/"
+            class="border bg-white block p-2.5 rounded"
+            ><i class="ri-facebook-box-line"></i
+          ></a>
+          <a href="https://www.youtube.com/" class="border bg-white p-2 rounded"
+            ><i class="ri-youtube-line"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/"
+            class="border bg-white p-2 rounded"
+            ><i class="ri-instagram-line"></i
+          ></a>
+          <a href="https://www.twitter.com/" class="border bg-white p-2 rounded"
+            ><i class="ri-twitter-line"></i
+          ></a>
+        </div>
+      </section>
+      <!-- Registered Office Address -->
+      <section>
+        <strong> Registered Office Address </strong>
+        <div class="space-y-1">
+          <div class="flex gap-2">
+            <div class="mt-2">
+              <address>
+                <i class="ri-map-pin-line"></i>
+                Vaishnavi Summit, Ground Floor, 7th Main, 80 Feet Road, 3rd
+                Block, Koramangala Industrial Layout, Bangalore KA IN 560034
+              </address>
+            </div>
+          </div>
+
+          <div class="flex gap-2">
+            <i class="ri-mail-line"></i>
+            <p>example@gmail.com</p>
+          </div>
+          <div class="flex gap-2">
+            <i class="ri-customer-service-2-line"></i>
+            <p>011-11002255</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- cart -->
+    <div
+      class="w-full h-full bg-black bg-opacity-80 fixed top-0 left-0 hidden"
+      id="cart-overlay"
+    >
+      <div
+        class="bg-white w-[400px] h-full absolute top-0 right-0 py-4 px-4"
+        id="cart-list"
+      >
+        <div class="flex justify-between">
+          <h1 class="text-lg font-semibold">My Cart</h1>
+          <button class="text-rose-600 font-bold text-xl" id="close-cart">
+            <i class="ri-close-circle-line"></i>
+          </button>
+        </div>
+        <hr class="my-4" />
+        <ul class="space-y-8">
+          <li>
+            <div class="flex gap-4 border-b pb-6">
+              <img
+                src="/assets/images/carrot_images/c4.jpg"
+                alt="   "
+                class="w-[80px]"
+              />
+              <div>
+                <p class="text-gray-500">Fresh pomogranate</p>
+                <div>
+                  <label class="font-bold text-slate-500">$56.0</label>
+                  <label> x 1Kg</label>
+                </div>
+                <div
+                  class="border flex items-center w-[80px] rounded p-[2px] justify-around mt-1"
+                >
+                  <button class="text-lg increase-qnt">+</button>
+                  <label class="qnt">1</label>
+                  <button class="text-lg decrease-qnt">-</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex gap-4 border-b pb-6">
+              <img
+                src="/assets/images/carrot_images/c5.jpg"
+                alt="   "
+                class="w-[80px]"
+              />
+              <div>
+                <p class="text-gray-500">Fresh pomogranate</p>
+                <div>
+                  <label class="font-bold text-slate-500">$56.0</label>
+                  <label>x 1Kg</label>
+                </div>
+                <div
+                  class="border flex items-center w-[80px] rounded p-[2px] justify-around mt-1"
+                >
+                  <button class="text-lg increase-qnt">+</button>
+                  <label class="qnt">1</label>
+                  <button class="text-lg decrease-qnt">-</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex gap-4 border-b pb-6">
+              <img
+                src="/assets/images/carrot_images/c6.jpg"
+                alt="   "
+                class="w-[80px]"
+              />
+              <div>
+                <p class="text-gray-500">Fresh pomogranate</p>
+                <div>
+                  <label class="font-bold text-slate-500">$56.0</label>
+                  <label>x 1Kg</label>
+                </div>
+                <div
+                  class="border flex items-center w-[80px] rounded p-[2px] justify-around mt-1"
+                >
+                  <button class="text-lg increase-qnt">+</button>
+                  <label class="qnt">1</label>
+                  <button class="text-lg decrease-qnt">-</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="space-y-6">
+              <div class="flex justify-between">
+                <label class="text-slate-800">Sub-Total</label>
+                <label class="font-bold">$300.00</label>
+              </div>
+              <div class="flex justify-between">
+                <label class="text-slate-800">VAT (20%)</label>
+                <label class="font-bold">$60.00</label>
+              </div>
+              <div class="flex justify-between">
+                <label class="text-slate-800">Total</label>
+                <label class="font-bold">$360.00</label>
+              </div>
+              <div class="flex justify-between">
+                <button
+                  class="bg-[#64b496] px-6 py-2.5 rounded text-white font-semibold hover:bg-black"
+                >
+                  View Cart
+                </button>
+                <button
+                  class="border-2 border-[#64b496] text-[#64b496] px-6 py-2.5 rounded font-semibold"
+                >
+                  Checkout
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="/assets/js/index.js"></script>
+  </body>
+</html>

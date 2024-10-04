@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      input:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- Top navbar -->
+      <nav class="flex justify-around items-center py-6">
+        <a href="/index.html"
+          ><button>
+            <img
+              src="/assets/carrot_logo/carrot_logo.png"
+              alt="carrot_logo"
+            /></button
+        ></a>
+        <form class="flex border-2 border-indigo-600 w-5/12 rounded">
+          <input
+            type="text"
+            name="keyword"
+            class="flex-1 px-4 rounded"
+            placeholder="Search..."
+          />
+          <select class="py-2 px-4 border-l-2 border-indigo-600">
+            <option>All Categories</option>
+            <option value="mens">Men's</option>
+            <option value="womens">Women's</option>
+            <option value="electronics">Electronics</option>
+          </select>
+          <button class="bg-indigo-600 py-2 px-4 text-white">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+        <div class="flex gap-6">
+          <button class="text-lg relative" id="account">
+            <i class="ri-user-line"></i>
+            <span
+              >Account
+              <div
+                class="rounded bg-white border w-[150px] py-3 absolute top-10 right-0 flex flex-col items-start"
+                id="account-menu"
+              >
+                <a
+                  href="/pages/register.html"
+                  class="text-sm hover:bg-gray-100 w-full text-left px-3 py-2"
+                  >Register</a
+                >
+                <a
+                  href="/pages/login.html"
+                  class="text-sm hover:bg-gray-100 w-full text-left px-3 py-2"
+                  >Login</a
+                >
+                <a
+                  href="/pages/checkout.html"
+                  class="text-sm hover:bg-gray-100 w-full text-left px-3 py-2"
+                  >Checkout</a
+                >
+              </div>
+            </span>
+          </button>
+          <a href="/pages/wishlist.html">
+            <button class="text-lg">
+              <i class="ri-heart-line"></i>
+              <span>Wishlist</span>
+            </button>
+          </a>
+          <button class="text-lg" id="cart">
+            <i class="ri-shopping-cart-line"></i>
+            <span>Cart</span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Main Nav Bar -->
+      <nav class="flex justify-around items-center py-6 bg-zinc-200">
+        <button class="border text-xl p-3 border-orange-700">
+          <i class="ri-menu-2-line"></i>
+        </button>
+        <ul class="flex gap-12">
+          <li><a href="#" class="text-md font-semibold">Home</a></li>
+          <li><a href="#" class="text-md font-semibold">Category</a></li>
+          <li><a href="#" class="text-md font-semibold">Products</a></li>
+          <li><a href="#" class="text-md font-semibold">Blog</a></li>
+          <li><a href="#" class="text-md font-semibold">Contact</a></li>
+        </ul>
+        <select class="border py-2 px-10">
+          <option>Current Location</option>
+          <option>Chicago</option>
+          <option>Los Angeles</option>
+          <option>Houston</option>
+          <option>Phoenix</option>
+          <option>San Diego</option>
+        </select>
+      </nav>
+
+      <!-- Page title -->
+      <div class="bg-[#e4f2ed] flex justify-between px-32 py-4 items-center">
+        <h1 class="font-semibold text-2xl">Checkout</h1>
+        <p class="font-semibold text-2xl">Home - Checkout</p>
+      </div>
+    </div>
+
+    <!-- section -->
+
+    <div class="w-10/12 mx-auto my-20 flex gap-8">
+      <div class="w-[400px] space-y-3">
+        <div class="space-y-6 border rounded-md p-5">
+          <h1 class="text-xl font-semibold">Summary</h1>
+          <div class="flex justify-between">
+            <label class="text-gray-500">Sub-Total</label>
+            <label class="font-bold">$80.00</label>
+          </div>
+          <div class="flex justify-between">
+            <label class="text-gray-500">Delivery Charges</label>
+            <label class="font-bold">$80.00</label>
+          </div>
+
+          <div class="border h=[1px] border-gray-200"></div>
+
+          <div class="flex justify-between">
+            <label class="font-bold">Total Amount</label>
+            <label class="font-bold">$160.00</label>
+          </div>
+
+          <div class="flex gap-4">
+            <img src="/assets/images/carrot_images/10.jpg" width="80" />
+            <div>
+              <label class="font-bold">Dates Value Pack Pouch</label>
+              <div class="text-amber-500">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-line"></i>
+              </div>
+              <div class="space-x-2">
+                <label class="text-[#64b496] font-bold">$120.25</label>
+                <del class="text-gray-600 text-xs">$123.25</del>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <img src="/assets/images/carrot_images/12.jpg" width="80" />
+            <div>
+              <label class="font-bold">Dates Value Pack Pouch</label>
+              <div class="text-amber-500">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-line"></i>
+              </div>
+              <div class="space-x-2">
+                <label class="text-[#64b496] font-bold">$120.25</label>
+                <del class="text-gray-600 text-xs">$123.25</del>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-6 border rounded-md p-5">
+          <h1 class="text-xl font-semibold">Delivery Methods</h1>
+          <label class="text-gray-500"
+            >Please Select the prefered Shipping Method</label
+          >
+          <div class="flex justify-between">
+            <label class="font-bold">Free Shipping</label>
+            <label class="font-bold">flat Rate</label>
+          </div>
+
+          <div class="flex justify-between">
+            <div class="text-md text-gray-600">
+              <input type="radio" name="rate" />
+              <label> Rate - $0.00</label>
+            </div>
+            <div class="text-md text-gray-600">
+              <input type="radio" name="rate" />
+              <label> Rate - $5.00</label>
+            </div>
+          </div>
+          <p class="text-bold">Add Comments About Your Order</p>
+          <textarea
+            class="border rounded-md w-full p-3"
+            rows="3"
+            placeholder="Comments"
+          ></textarea>
+        </div>
+        <div class="space-y-6 border rounded-md p-5">
+          <h1 class="text-xl font-semibold">Payment Methods</h1>
+          <label class="text-gray-500"
+            >Please select the preferred payment method to use on this order.
+          </label>
+          <div class="space-y-3">
+            <div class="text-gray-500 space-x-1">
+              <input type="radio" name="payment" />
+              <label>Cash On Delivery</label>
+            </div>
+            <div class="text-gray-500 space-x-1">
+              <input type="radio" name="payment" />
+              <label>UPI</label>
+            </div>
+            <div class="text-gray-500 space-x-1">
+              <input type="radio" name="payment" />
+              <label>Bank Transfer</label>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-6 border rounded-md p-5">
+          <h1 class="text-xl font-semibold">Payment Methods</h1>
+          <img src="/assets/images/carrot_images/payment.png" alt="" />
+        </div>
+      </div>
+      <div class="flex flex-col flex-1 gap-y-8">
+        <div class="space-y-6 border rounded-md p-5">
+          <div class="space-y-3">
+            <h1 class="text-xl font-semibold">New Customers</h1>
+            <p class="font-bold">Checkout Options</p>
+            <div class="text-gray-500 flex gap-16">
+              <div>
+                <input type="radio" name="checkout" />
+                <label>Register Account</label>
+              </div>
+              <div>
+                <input type="radio" name="checkout" />
+                <label>Guest Account</label>
+              </div>
+            </div>
+            <p class="text-gray-500">
+              By creating an account you will be able to shop faster, be up to
+              date on an order's status, and keep track of the orders you have
+              previously made.
+            </p>
+            <button
+              class="font-bold text-white bg-[#64b496] px-6 py-2.5 rounded-md hover:bg-black"
+            >
+              Continue
+            </button>
+            <h1 class="text-xl font-semibold">Returning Customers</h1>
+            <form class="space-y-6">
+              <div class="flex flex-col space-y-2">
+                <label class="font-bold">Email Address</label>
+                <input
+                  required="true"
+                  type="email"
+                  placeholder="Enter your email address"
+                  class="border rounded-md p-3"
+                />
+              </div>
+              <div class="flex flex-col space-y-2">
+                <label class="font-bold">Password</label>
+                <input
+                  required="true"
+                  type="password"
+                  placeholder="******"
+                  class="border rounded-md p-3"
+                />
+              </div>
+              <div class="space-x-2">
+                <button
+                  class="font-bold text-white bg-[#64b496] px-6 py-2.5 rounded-md hover:bg-black"
+                >
+                  Login
+                </button>
+                <a href="forgot-password.html" class="underline"
+                  >Forgot password?</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="space-y-6 border rounded-md p-5">
+          <div class="space-y-3">
+            <h1 class="text-xl font-semibold">Billing Details</h1>
+            <p class="font-bold">Checkout Options</p>
+            <div class="text-gray-500 flex gap-16">
+              <div>
+                <input type="radio" name="checkout" />
+                <label>I want to use an existing address</label>
+              </div>
+              <div>
+                <input type="radio" name="checkout" />
+                <label>I want to use new address</label>
+              </div>
+            </div>
+
+            <form class="grid grid-cols-2 gap-6">
+              <div class="flex flex-col space-y-2">
+                <label class="font-bold">First Name</label>
+                <input
+                  required="true"
+                  type="text"
+                  placeholder="Enter FirstName"
+                  class="border rounded-md p-3"
+                />
+              </div>
+              <div class="flex flex-col space-y-2">
+                <label class="font-bold">Last Name</label>
+                <input
+                  required="true"
+                  type="text"
+                  placeholder="Enter LastName"
+                  class="border rounded-md p-3"
+                />
+              </div>
+              <div class="flex flex-col space-y-2 col-span-2">
+                <label class="font-bold">Address</label>
+                <input
+                  required="true"
+                  type="text"
+                  placeholder="address"
+                  class="border rounded-md p-3"
+                />
+              </div>
+              <div class="flex flex-col space-y-2 col-span-2">
+                <label class="font-bold">City</label>
+                <select
+                  required="true"
+                  placeholder="Select City"
+                  class="border rounded-md p-3"
+                >
+                  <option value="city-1">City 1</option>
+                  <option value="city-2">City 2</option>
+                  <option value="city-3">City 3</option>
+                  <option value="city-4">City 4</option>
+                  <option value="city-5">City 5</option>
+                </select>
+              </div>
+              <div class="flex flex-col space-y-2 col-span-2">
+                <label class="font-bold">PinCode</label>
+                <input
+                  required="true"
+                  type="number"
+                  placeholder="11111"
+                  class="border rounded-md p-3"
+                />
+              </div>
+              <div class="flex flex-col space-y-2 col-span-2">
+                <label class="font-bold">Country</label>
+                <select
+                  required="true"
+                  placeholder="Select City"
+                  class="border rounded-md p-3"
+                >
+                  <option value="india">India</option>
+                  <option value="nepal">Nepal</option>
+                  <option value="Pakistan">Pakistan</option>
+                  <option value="China">China</option>
+                  <option value="Bangladesh">Bangladesh</option>
+                </select>
+              </div>
+              <div class="flex flex-col space-y-2 col-span-2">
+                <label class="font-bold">Region/Stats</label>
+                <select
+                  required="true"
+                  placeholder="Select City"
+                  class="border rounded-md p-3"
+                >
+                  <option value="state-1">State 1</option>
+                  <option value="state-2">State 2</option>
+                  <option value="state-3">State 3</option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+        <button
+          class="ml-auto font-bold text-white bg-[#64b496] px-6 py-2.5 rounded-md hover:bg-black"
+        >
+          Place Order
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="p-4 grid grid-cols-4 bg-slate-200">
+      <div>
+        <img src="/assets/carrot_logo/carrot_logo.png" alt="carrot_logo" />
+        <section>
+          <strong>ABOUT</strong>
+          <div class="mt-4 space-y-1">
+            <div><button>Contact Us</button></div>
+            <div><button>Careers</button></div>
+            <div><button>Our Stories</button></div>
+            <div><button>Press</button></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Help section -->
+      <section>
+        <strong>HELP</strong>
+        <div class="mt-2 space-y-1">
+          <div><button>Payments</button></div>
+          <div><button>Shipping</button></div>
+          <div><button>Cancellation & Return</button></div>
+          <div><button>FAQ</button></div>
+          <div><button>Report Infringement</button></div>
+        </div>
+      </section>
+
+      <!-- Social section -->
+      <section>
+        <strong>Social:</strong>
+        <div class="flex gap-2 items-center mt-2">
+          <a
+            href="https://www.facebook.com/"
+            class="border bg-white block p-2.5 rounded"
+            ><i class="ri-facebook-box-line"></i
+          ></a>
+          <a href="https://www.youtube.com/" class="border bg-white p-2 rounded"
+            ><i class="ri-youtube-line"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/"
+            class="border bg-white p-2 rounded"
+            ><i class="ri-instagram-line"></i
+          ></a>
+          <a href="https://www.twitter.com/" class="border bg-white p-2 rounded"
+            ><i class="ri-twitter-line"></i
+          ></a>
+        </div>
+      </section>
+      <!-- Registered Office Address -->
+      <section>
+        <strong> Registered Office Address </strong>
+        <div class="space-y-1">
+          <div class="flex gap-2">
+            <div class="mt-2">
+              <address>
+                <i class="ri-map-pin-line"></i>
+                Vaishnavi Summit, Ground Floor, 7th Main, 80 Feet Road, 3rd
+                Block, Koramangala Industrial Layout, Bangalore KA IN 560034
+              </address>
+            </div>
+          </div>
+
+          <div class="flex gap-2">
+            <i class="ri-mail-line"></i>
+            <p>example@gmail.com</p>
+          </div>
+          <div class="flex gap-2">
+            <i class="ri-customer-service-2-line"></i>
+            <p>011-11002255</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- cart -->
+    <div
+      class="w-full h-full bg-black bg-opacity-80 fixed top-0 left-0 hidden"
+      id="cart-overlay"
+    >
+      <div
+        class="bg-white w-[400px] h-full absolute top-0 right-0 py-4 px-4"
+        id="cart-list"
+      >
+        <div class="flex justify-between">
+          <h1 class="text-lg font-semibold">My Cart</h1>
+          <button class="text-rose-600 font-bold text-xl" id="close-cart">
+            <i class="ri-close-circle-line"></i>
+          </button>
+        </div>
+        <hr class="my-4" />
+        <ul class="space-y-8">
+          <li>
+            <div class="flex gap-4 border-b pb-6">
+              <img
+                src="/assets/images/carrot_images/c4.jpg"
+                alt="   "
+                class="w-[80px]"
+              />
+              <div>
+                <p class="text-gray-500">Fresh pomogranate</p>
+                <div>
+                  <label class="font-bold text-slate-500">$56.0</label>
+                  <label> x 1Kg</label>
+                </div>
+                <div
+                  class="border flex items-center w-[80px] rounded p-[2px] justify-around mt-1"
+                >
+                  <button class="text-lg increase-qnt">+</button>
+                  <label class="qnt">1</label>
+                  <button class="text-lg decrease-qnt">-</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex gap-4 border-b pb-6">
+              <img
+                src="/assets/images/carrot_images/c5.jpg"
+                alt="   "
+                class="w-[80px]"
+              />
+              <div>
+                <p class="text-gray-500">Fresh pomogranate</p>
+                <div>
+                  <label class="font-bold text-slate-500">$56.0</label>
+                  <label>x 1Kg</label>
+                </div>
+                <div
+                  class="border flex items-center w-[80px] rounded p-[2px] justify-around mt-1"
+                >
+                  <button class="text-lg increase-qnt">+</button>
+                  <label class="qnt">1</label>
+                  <button class="text-lg decrease-qnt">-</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex gap-4 border-b pb-6">
+              <img
+                src="/assets/images/carrot_images/c6.jpg"
+                alt="   "
+                class="w-[80px]"
+              />
+              <div>
+                <p class="text-gray-500">Fresh pomogranate</p>
+                <div>
+                  <label class="font-bold text-slate-500">$56.0</label>
+                  <label>x 1Kg</label>
+                </div>
+                <div
+                  class="border flex items-center w-[80px] rounded p-[2px] justify-around mt-1"
+                >
+                  <button class="text-lg increase-qnt">+</button>
+                  <label class="qnt">1</label>
+                  <button class="text-lg decrease-qnt">-</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="space-y-6">
+              <div class="flex justify-between">
+                <label class="text-slate-800">Sub-Total</label>
+                <label class="font-bold">$300.00</label>
+              </div>
+              <div class="flex justify-between">
+                <label class="text-slate-800">VAT (20%)</label>
+                <label class="font-bold">$60.00</label>
+              </div>
+              <div class="flex justify-between">
+                <label class="text-slate-800">Total</label>
+                <label class="font-bold">$360.00</label>
+              </div>
+              <div class="flex justify-between">
+                <button
+                  class="bg-[#64b496] px-6 py-2.5 rounded text-white font-semibold hover:bg-black"
+                >
+                  View Cart
+                </button>
+                <button
+                  class="border-2 border-[#64b496] text-[#64b496] px-6 py-2.5 rounded font-semibold"
+                >
+                  Checkout
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="/assets/js/index.js"></script>
+  </body>
+</html>

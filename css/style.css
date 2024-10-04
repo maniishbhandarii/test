@@ -1,0 +1,114 @@
+#account-menu {
+  display: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.img-zoom {
+  cursor: crosshair;
+  position: relative;
+}
+
+.img-zoom div {
+  position: relative;
+}
+
+.img-zoom:hover img {
+  animation: zoom 0.5s linear forwards;
+}
+
+.img-zoom:hover div {
+  animation: slide 0.2s linear forwards;
+}
+
+#hero{
+  padding: 32px;
+  border-top: 1px solid #f1f1f1;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+} 
+
+/* .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+ 
+#slide-1{
+  background: url('/assets/images/Banners/temp1.png');
+  width: 100%; 
+  height: 550px;
+  background-size: cover;
+  background-position:  right;
+  border-radius: 32px;
+}
+#slide-2{
+  background: url('/assets/images/Banners/temp2.png');
+  width: 100%; 
+  height: 550px;
+  background-size: cover;
+  background-position:  right;
+  border-radius: 40px;
+}
+
+.great-deals{
+  height: 600px;
+  background: url(/assets/images/Banners/temp1.png);
+  background-size: cover;
+  animation: bg-fade 3s linear infinite;
+}
+
+@keyframes bg-fade {
+  from{  background: url(/assets/images/Banners/temp1.png);
+  }
+  to{  background: url(/assets/images/Banners/temp2.png);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(2);
+  }
+}
+
+@keyframes slide {
+  from {
+    right: -40px;
+  }
+
+  to {
+    right: 10px;
+  }
+}
+
+@keyframes cartlist {
+  from {
+    right: -400px;
+  }
+
+  to {
+    right: 0;
+  }
+}
+
+@keyframes cartlistclose {
+  from {
+    right: 0;
+  }
+
+  to {
+    right: -400px;
+  }
+}
